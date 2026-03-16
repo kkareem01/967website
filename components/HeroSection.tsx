@@ -13,31 +13,46 @@ export default function HeroSection() {
         sizes="100vw"
         className="object-cover"
       />
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-espresso/60" aria-hidden="true" />
+      {/* Overlay — gradient for softer, more editorial feel */}
+      <div className="absolute inset-0 bg-gradient-to-b from-espresso/55 via-espresso/50 to-espresso/70" aria-hidden="true" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-        <h1 className="font-dm-serif text-4xl md:text-6xl lg:text-7xl text-cream leading-tight mb-4">
-          967 Coffee Co.
-        </h1>
-        <p className="font-inter text-lg md:text-xl text-cream/80 mb-8 max-w-xl mx-auto">
-          Authentic Yemeni coffee, signature drinks, and desserts
+      <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto py-8">
+        {/* Location label */}
+        <p className="font-inter text-[10px] md:text-xs tracking-[0.3em] uppercase text-caramel mb-10">
+          Alpharetta, Georgia
         </p>
+
+        {/* Brand name — split into two lines */}
+        <h1 className="mb-0">
+          <span className="font-dm-serif text-[96px] md:text-[128px] lg:text-[156px] text-cream block leading-none">
+            967
+          </span>
+          <span className="font-dm-serif italic text-5xl md:text-6xl lg:text-7xl text-caramel block leading-snug -mt-2">
+            Coffee Co.
+          </span>
+        </h1>
+
+        {/* Tagline */}
+        <p className="font-inter text-[10px] md:text-xs tracking-[0.3em] uppercase text-cream/50 mt-8 mb-12">
+          Authentic Yemeni Coffee
+        </p>
+
+        {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="https://www.google.com/maps/dir//967+Coffee+Co,+11235+Alpharetta+Hwy+Suite+136,+Roswell,+GA+30076"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center bg-caramel text-espresso font-inter font-semibold px-8 py-3 rounded-full min-h-[44px] hover:bg-gold hover:scale-105 transition-all"
+            className="w-full sm:w-auto inline-flex items-center justify-center bg-caramel text-espresso font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:bg-gold transition-all"
           >
             Get Directions
           </a>
           <Link
             href="/menu"
-            className="w-full sm:w-auto inline-flex items-center justify-center border-2 border-cream text-cream font-inter font-semibold px-8 py-3 rounded-full min-h-[44px] hover:bg-cream hover:text-espresso hover:scale-105 transition-all"
+            className="w-full sm:w-auto inline-flex items-center justify-center border border-cream/40 text-cream font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:border-cream/80 hover:bg-cream/5 transition-all"
           >
-            View Menu
+            View Our Menu
           </Link>
         </div>
       </div>

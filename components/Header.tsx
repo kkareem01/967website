@@ -17,7 +17,7 @@ export default function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-40 bg-espresso/95 backdrop-blur-sm border-b border-coffee/30">
+    <header className="sticky top-0 z-40 bg-cream/98 backdrop-blur-sm border-b border-espresso/10">
       <nav
         aria-label="Main navigation"
         className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16"
@@ -35,12 +35,12 @@ export default function Header() {
         </Link>
 
         {/* Desktop nav */}
-        <ul className="hidden md:flex items-center gap-6">
+        <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-cream/80 hover:text-caramel transition-colors text-sm font-inter font-medium"
+                className="text-espresso/50 hover:text-espresso transition-colors text-xs font-inter font-medium tracking-widest uppercase"
               >
                 {link.label}
               </Link>
@@ -48,12 +48,12 @@ export default function Header() {
           ))}
         </ul>
 
-        {/* Order Online CTA */}
+        {/* Order Online — minimal text link */}
         <a
           href="https://www.clover.com/online-ordering/967-coffee-co-roswell"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:inline-flex items-center bg-caramel text-espresso text-sm font-inter font-semibold px-5 py-2 rounded-full min-h-[44px] hover:bg-gold transition-colors"
+          className="hidden md:inline-flex items-center text-espresso/60 hover:text-espresso text-xs font-inter font-medium tracking-widest uppercase transition-colors min-h-[44px]"
         >
           Order Online
         </a>
@@ -64,7 +64,7 @@ export default function Header() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           onClick={() => setOpen(!open)}
-          className="md:hidden flex flex-col justify-center items-center gap-1.5 min-h-[44px] min-w-[44px] text-cream"
+          className="md:hidden flex flex-col justify-center items-center gap-1.5 min-h-[44px] min-w-[44px] text-espresso"
         >
           <span
             className={`block w-6 h-0.5 bg-current transition-transform duration-300 ${open ? 'translate-y-2 rotate-45' : ''}`}
@@ -81,26 +81,26 @@ export default function Header() {
       {/* Mobile menu */}
       <div
         id="mobile-menu"
-        className={`md:hidden bg-espresso border-t border-coffee/30 transition-all duration-300 overflow-hidden ${open ? 'max-h-96' : 'max-h-0'}`}
+        className={`md:hidden bg-cream border-t border-espresso/10 transition-all duration-300 overflow-hidden ${open ? 'max-h-96' : 'max-h-0'}`}
       >
-        <ul className="flex flex-col px-4 pb-4 pt-2 gap-1">
+        <ul className="flex flex-col px-6 pb-5 pt-3 gap-1">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="block text-cream/80 hover:text-caramel py-2.5 text-base font-inter transition-colors"
+                className="block text-espresso/70 hover:text-espresso py-2.5 text-xs font-inter font-medium tracking-widest uppercase transition-colors"
               >
                 {link.label}
               </Link>
             </li>
           ))}
-          <li className="pt-2">
+          <li className="pt-3">
             <a
               href="https://www.clover.com/online-ordering/967-coffee-co-roswell"
               target="_blank"
               rel="noopener noreferrer"
-              className="block text-center bg-caramel text-espresso font-semibold px-5 py-3 rounded-full min-h-[44px] hover:bg-gold transition-colors"
+              className="block text-center border border-espresso/20 text-espresso text-xs font-inter font-medium tracking-widest uppercase px-5 py-3 rounded min-h-[44px] hover:border-espresso/40 transition-colors"
             >
               Order Online
             </a>
