@@ -1,0 +1,24 @@
+# 967 Coffee Co.
+> Authentic Yemeni coffee shop in Roswell, GA (near Atlanta). Open until 2AM on weekends.
+
+## About
+967 Coffee Co. takes its name from Yemen's international calling code (+967). We bring centuries-old Yemeni coffee traditions — rooted in mountain farms dating back to the 15th century — to Roswell, GA and the greater Atlanta area.
+
+## Location & Contact
+- Address: 11235 Alpharetta Highway Suite 136, Roswell, GA 30076
+- Phone: (470) 292-3108
+- Hours: Mon–Thu 7AM–11PM, Fri 7AM–2AM, Sat 9AM–2AM, Sun 9AM–10PM
+
+## Pages
+- /: Homepage with menu overview, hours, and FAQ
+- /about: Full brand story and Yemeni coffee education
+- /menu: Complete drink menu — specialty lattes, Yemeni drinks, refreshers, coffee
+- /contact: Location, hours, map, contact form
+- /partnerships: Franchise and catering partnership inquiries
+- /careers: Job opportunities at 967 Coffee Co.
+
+## Key Facts
+- Specialty: Authentic Yemeni coffee (qishr, kahwa, Yemeni latte)
+- Price range: $$
+- Open late: Until 2AM Friday & Saturday
+- Online ordering: Available via Clover
