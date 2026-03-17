@@ -111,10 +111,8 @@ export default function Footer() {
             <table className="text-sm w-full">
               <tbody className="space-y-1">
                 {[
-                  { day: 'Mon – Thu', hours: '7:00 AM – 11:00 PM' },
-                  { day: 'Friday', hours: '7:00 AM – 2:00 AM' },
-                  { day: 'Saturday', hours: '9:00 AM – 2:00 AM' },
-                  { day: 'Sunday', hours: '9:00 AM – 10:00 PM' },
+                  { day: 'Sun – Thu', hours: '7:00 AM – 12:00 AM' },
+                  { day: 'Fri & Sat', hours: '7:00 AM – 2:00 AM' },
                 ].map(({ day, hours }) => (
                   <tr key={day}>
                     <td className="pr-4 text-cream/60 py-0.5">{day}</td>

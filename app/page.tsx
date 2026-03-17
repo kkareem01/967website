@@ -35,22 +35,22 @@ export const metadata: Metadata = {
 
 const featuredItems = [
   {
-    name: 'Iced Adeni',
+    name: 'Iced Adeni Chai',
     description: 'Bold spiced espresso over ice.',
     image: '/images/drinks/iced-adeni.jpg',
   },
   {
-    name: 'Iced Latte',
+    name: 'Iced Yemeni Latte',
     description: 'Smooth espresso, cold milk, perfect ice.',
     image: '/images/drinks/iced-latte.jpg',
   },
   {
-    name: 'Dragon Refresher',
+    name: 'Dragon Fruit Refresher',
     description: 'Bright, fruity, and energizing.',
     image: '/images/drinks/dragon-refresher.jpg',
   },
   {
-    name: 'Biscoff Cake',
+    name: 'Biscoff Milk Cake',
     description: 'Layered cookie butter cake.',
     image: '/images/food/biscoff-cake.jpg',
   },
@@ -60,7 +60,7 @@ const featuredItems = [
     image: '/images/food/pista-honeycomb.jpg',
   },
   {
-    name: 'Strawberry Drink',
+    name: 'Strawberry Refresher',
     description: 'Fresh strawberry, creamy and bright.',
     image: '/images/drinks/strawberry.jpg',
   },
@@ -90,7 +90,23 @@ const reviews = [
     color: '#D4A853',
     stars: 5,
     excerpt:
-      "I didn't know what Yemeni coffee was before visiting 967. Now I can't go back to regular coffee shops. The Qishr is something special. Highly recommend.",
+      "I didn't know what Yemeni coffee was before visiting 967 Coffee Co.. Now I can't go back to regular coffee shops. The Qishr is something special. Highly recommend.",
+  },
+  {
+    name: 'Omar T.',
+    initials: 'OT',
+    color: '#8B5E3C',
+    stars: 5,
+    excerpt:
+      'The Adeni Chai here is the real deal — reminds me of home. We also tried the Pistachio Milkcake and Nutella Honeycomb. Everything is made with so much care. Best spot in Roswell, hands down.',
+  },
+  {
+    name: 'Priya N.',
+    initials: 'PN',
+    color: '#A67B5B',
+    stars: 5,
+    excerpt:
+      "Love that they're open late on weekends! The Biscoff Latte is dangerously good and the vibe is perfect for a Friday night hangout. My friend group's new go-to spot.",
   },
 ]
 
@@ -105,7 +121,7 @@ const faqs = [
   },
   {
     q: 'What are your hours?',
-    a: "We're open Monday–Thursday 7AM–11PM, Friday 7AM–2AM, Saturday 9AM–2AM, and Sunday 9AM–10PM. We're open late on weekends!",
+    a: "We're open Sunday–Thursday 7AM–12AM and Friday & Saturday 7AM–2AM. We're open late on weekends!",
   },
   {
     q: 'Do you offer online ordering?',
@@ -136,7 +152,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <h2 className="font-dm-serif text-2xl md:text-4xl text-espresso mb-3">
-              Most Popular at 967
+              Most Popular at 967 Coffee Co.
             </h2>
             <p className="font-inter text-coffee/70 text-sm max-w-xl mx-auto">
               Rich Yemeni coffee, signature drinks, and desserts people keep coming back for.
@@ -189,9 +205,11 @@ export default function HomePage() {
               </span>
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="flex flex-col md:flex-row md:flex-wrap md:justify-center gap-6">
             {reviews.map((review) => (
-              <ReviewCard key={review.name} {...review} />
+              <div key={review.name} className="w-full md:w-[calc(33.333%-1rem)]">
+                <ReviewCard {...review} />
+              </div>
             ))}
           </div>
           <div className="text-center mt-10">
@@ -246,10 +264,8 @@ export default function HomePage() {
             <table className="text-sm w-full">
               <tbody>
                 {[
-                  { day: 'Monday – Thursday', hours: '7:00 AM – 11:00 PM' },
-                  { day: 'Friday', hours: '7:00 AM – 2:00 AM' },
-                  { day: 'Saturday', hours: '9:00 AM – 2:00 AM' },
-                  { day: 'Sunday', hours: '9:00 AM – 10:00 PM' },
+                  { day: 'Sunday – Thursday', hours: '7:00 AM – 12:00 AM' },
+                  { day: 'Friday & Saturday', hours: '7:00 AM – 2:00 AM' },
                 ].map(({ day, hours }) => (
                   <tr key={day} className="border-b border-latte last:border-0">
                     <td className="pr-4 py-2 text-coffee/70">{day}</td>

@@ -65,7 +65,7 @@ export default function MenuPage() {
         <div className="bg-cream py-14 px-4 sm:px-6 lg:px-8 md:py-20">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="font-dm-serif text-4xl md:text-5xl text-espresso">
-              967CoffeeCo Menu
+              967 Coffee Co. Menu
             </h1>
             <div
               className="w-12 h-px bg-caramel mx-auto mt-6"

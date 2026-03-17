@@ -113,7 +113,7 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
         image: '/images/drinks/iced-latte.jpg',
       },
       {
-        name: 'Pistachio Latte',
+        name: 'Iced Pistachio Latte',
         description: 'Rich espresso meets velvety pistachio cream.',
         image: '/images/menu/pistachio-latte.jpg',
       },
@@ -125,7 +125,7 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
       {
         name: 'Tiramisu Latte',
         description: 'Inspired by the classic Italian dessert.',
-        image: '/images/menu/tiramisu-latte.jpg',
+        image: '/images/menu/tiramisu-latte.png',
       },
       {
         name: 'Yemeni Latte',
@@ -135,7 +135,7 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
       {
         name: 'Iced Yemeni Latte',
         description: 'Our signature Yemeni Latte, chilled over ice.',
-        image: '/images/drinks/iced-adeni.jpg',
+        image: '/images/menu/iced-yemeni-latte.jpg',
       },
       {
         name: 'Spanish Latte',

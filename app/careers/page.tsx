@@ -53,7 +53,7 @@ export default function CareersPage() {
         {/* Body */}
         <section className="max-w-xl mx-auto text-center px-4 sm:px-6">
           <h2 className="font-dm-serif text-2xl md:text-3xl text-espresso mb-4">
-            Join the 967 Family
+            Join the 967 Coffee Co. Family
           </h2>
           <p className="font-inter text-sm md:text-base text-coffee/70 leading-relaxed">
             We&rsquo;re always looking for passionate, hospitality-driven people to join our team at

@@ -124,7 +124,7 @@ const cards = [
   {
     eyebrow: 'The Space',
     headline: 'Built for how you spend time.',
-    body: 'Study. Work. Meet. Sit. 967 works for all of it.',
+    body: 'Study. Work. Meet. Sit. 967 Coffee Co. works for all of it.',
     Illustration: SpaceIllustration,
     image: '/images/why/space.jpg',
   },
@@ -138,7 +138,7 @@ const cards = [
   {
     eyebrow: 'The Hours',
     headline: 'Open when others aren\u2019t.',
-    body: 'Late nights. Early mornings. 967 keeps your schedule.',
+    body: 'Late nights. Early mornings. 967 Coffee Co. keeps your schedule.',
     Illustration: HoursIllustration,
   },
   {
@@ -238,7 +238,7 @@ export default function WhySection() {
       {/* Header row */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-baseline justify-between mb-8">
         <h2 className="font-dm-serif text-4xl md:text-6xl text-espresso">
-          Why 967?
+          Why 967 Coffee Co.?
         </h2>
         <Link
           href="/about"

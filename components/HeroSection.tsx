@@ -19,13 +19,8 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto py-8">
         {/* Brand name — split into two lines */}
-        <h1 className="mb-0">
-          <span className="font-dm-serif text-[96px] md:text-[128px] lg:text-[156px] text-cream block leading-none">
-            967
-          </span>
-          <span className="font-dm-serif italic text-5xl md:text-6xl lg:text-7xl text-caramel block leading-snug -mt-2">
-            Coffee Co.
-          </span>
+        <h1 className="mb-0 font-dm-serif text-[3.25rem] md:text-7xl lg:text-8xl text-cream leading-none">
+          967 <span className="italic">Coffee Co.</span>
         </h1>
 
         {/* Tagline */}

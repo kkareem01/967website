@@ -31,7 +31,7 @@ const partnershipTypes = [
   {
     num: '01',
     title: 'Franchise',
-    subtitle: 'Open a 967 Location',
+    subtitle: 'Open a 967 Coffee Co. Location',
     description:
       'Bring the full 967 Coffee Co. experience to your city. Our franchise model gives you the brand, the systems, and the support to launch a location that feels authentic from day one.',
   },
@@ -47,7 +47,7 @@ const partnershipTypes = [
     title: 'Corporate',
     subtitle: 'Office & Workplace',
     description:
-      'Bring 967 to your team with recurring coffee service, branded experiences, and workplace partnerships that people actually look forward to.',
+      'Bring 967 Coffee Co. to your team with recurring coffee service, branded experiences, and workplace partnerships that people actually look forward to.',
   },
 ] as const
 
@@ -65,7 +65,7 @@ const pillars = [
   {
     num: '03',
     title: 'Community-Driven',
-    body: '967 was built around hospitality, belonging, and culture. That foundation translates into loyal customers, repeat visits, and word-of-mouth growth.',
+    body: '967 Coffee Co. was built around hospitality, belonging, and culture. That foundation translates into loyal customers, repeat visits, and word-of-mouth growth.',
   },
   {
     num: '04',
@@ -82,7 +82,7 @@ const pillars = [
 const stats = [
   { value: '4.9\u2605', label: 'Google Rating' },
   { value: '600+', label: '5-Star Reviews' },
-  { value: '2024', label: 'Est. Roswell, GA' },
+  { value: '2025', label: 'Est. Roswell, GA' },
   { value: '7 Days', label: 'Open Every Week' },
 ] as const
 
@@ -112,24 +112,16 @@ export default function PartnershipsPage() {
         />
 
         <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto py-8">
-          <p className="font-inter text-[10px] md:text-xs tracking-[0.35em] uppercase text-caramel mb-6">
-            Franchise &amp; Partnership Opportunities
-          </p>
-          <div className="w-8 h-px bg-caramel mx-auto mb-8" aria-hidden="true" />
-          <h1 className="mb-0">
-            <span className="font-dm-serif text-5xl md:text-7xl lg:text-8xl text-cream block leading-none">
-              Grow With
-            </span>
-            <span className="font-dm-serif italic text-6xl md:text-8xl lg:text-9xl text-caramel block leading-snug -mt-1">
-              967
-            </span>
+          <h1 className="mb-0 font-dm-serif text-cream leading-tight">
+            <span className="block text-5xl md:text-7xl lg:text-8xl">Grow With</span>
+            <span className="block text-5xl md:text-7xl lg:text-8xl">967 <span className="italic">Coffee Co.</span></span>
           </h1>
           <p className="font-inter text-sm md:text-base text-cream/80 mt-8 max-w-lg mx-auto leading-relaxed">
             Bring authentic Yemeni coffee culture to your city, your event, or your&nbsp;workplace.
           </p>
           <a
-            href="mailto:967coffeeco@gmail.com"
-            className="mt-10 inline-flex items-center justify-center bg-caramel text-espresso font-inter font-medium px-9 py-3.5 rounded-full text-sm tracking-wide min-h-[44px] hover:bg-gold transition-all"
+            href="mailto:admin@967coffeeco.com"
+            className="mt-10 inline-flex items-center justify-center bg-caramel text-espresso font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:bg-gold transition-all"
           >
             Contact Us
           </a>
@@ -243,7 +235,7 @@ export default function PartnershipsPage() {
             </p>
             <h2 className="font-dm-serif text-3xl md:text-5xl text-espresso">
               Why Partners Choose{' '}
-              <span className="italic text-coffee">967</span>
+              <span className="italic text-coffee">967 Coffee Co.</span>
             </h2>
           </div>
 
@@ -294,8 +286,8 @@ export default function PartnershipsPage() {
             workplace? We&rsquo;d love to hear from you.
           </p>
           <a
-            href="mailto:967coffeeco@gmail.com"
-            className="inline-flex items-center justify-center bg-caramel text-espresso font-inter font-medium px-9 py-3.5 rounded-full text-sm tracking-wide min-h-[44px] hover:bg-gold transition-all"
+            href="mailto:admin@967coffeeco.com"
+            className="inline-flex items-center justify-center bg-caramel text-espresso font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:bg-gold transition-all"
           >
             Contact Us
           </a>

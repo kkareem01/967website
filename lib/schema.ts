@@ -16,10 +16,8 @@ export const cafeSchema = {
     addressCountry: 'US',
   },
   openingHours: [
-    'Mo-Th 07:00-23:00',
-    'Fr 07:00-02:00',
-    'Sa 09:00-02:00',
-    'Su 09:00-22:00',
+    'Su-Th 07:00-00:00',
+    'Fr-Sa 07:00-02:00',
   ],
   hasMap:
     'https://www.google.com/maps/dir//967+Coffee+Co,+11235+Alpharetta+Hwy+Suite+136,+Roswell,+GA+30076',
