@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 /* ------------------------------------------------------------------ */
@@ -118,18 +119,21 @@ const cards = [
     headline: 'A different kind of bean.',
     body: "Yemeni beans. Richer flavor. Brewed right. You'll taste the difference.",
     Illustration: CoffeeIllustration,
+    image: '/images/why/beans.jpg',
   },
   {
     eyebrow: 'The Space',
     headline: 'Built for how you spend time.',
     body: 'Study. Work. Meet. Sit. 967 works for all of it.',
     Illustration: SpaceIllustration,
+    image: '/images/why/space.jpg',
   },
   {
     eyebrow: 'The Standard',
     headline: 'Same great cup. Every time.',
     body: 'Consistency you can trust.',
     Illustration: ConsistencyIllustration,
+    image: '/images/why/cup.jpg',
   },
   {
     eyebrow: 'The Hours',
@@ -142,6 +146,7 @@ const cards = [
     headline: 'A community, not just a caf\u00e9.',
     body: 'Regulars, new faces, and everyone in between.',
     Illustration: CommunityIllustration,
+    image: '/images/why/community.jpg',
   },
 ]
 
@@ -154,12 +159,14 @@ function ValueCard({
   headline,
   body,
   Illustration,
+  image,
   index,
 }: {
   eyebrow: string
   headline: string
   body: string
   Illustration: () => React.JSX.Element
+  image?: string
   index: number
 }) {
   const cardRef = useRef<HTMLDivElement>(null)
@@ -201,10 +208,22 @@ function ValueCard({
         </p>
       </div>
 
-      {/* Illustration — bottom */}
-      <div className="flex-1 flex items-center justify-center text-caramel px-6 pb-4 min-h-[120px]">
-        <Illustration />
-      </div>
+      {/* Visual — bottom */}
+      {image ? (
+        <div className="relative flex-1 min-h-[120px]">
+          <Image
+            src={image}
+            alt={headline}
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 52vw, (max-width: 1024px) 200px, 20vw"
+          />
+        </div>
+      ) : (
+        <div className="flex-1 flex items-center justify-center text-caramel px-6 pb-4 min-h-[120px]">
+          <Illustration />
+        </div>
+      )}
     </div>
   )
 }

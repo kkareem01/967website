@@ -30,9 +30,9 @@ export const metadata: Metadata = {
 }
 
 const storeImages = [
-  { src: '/images/store/indoor-1.jpg', alt: '967 Coffee Co. main seating area with warm lighting' },
-  { src: '/images/store/indoor-2.jpg', alt: '967 Coffee Co. cozy corner with cultural decor' },
-  { src: '/images/store/indoor-3.jpg', alt: '967 Coffee Co. bar area and coffee preparation' },
+  { src: '/images/store/Group-1.jpg', alt: '967 Coffee Co. guests gathering in the majlis' },
+  { src: '/images/store/Group-2.JPG', alt: '967 Coffee Co. community enjoying Yemeni coffee together' },
+  { src: '/images/store/Group-3.jpg', alt: '967 Coffee Co. friends sharing a moment over coffee' },
 ] as const
 
 export default function AboutPage() {
@@ -51,12 +51,12 @@ export default function AboutPage() {
         {/* ── Hero ── */}
         <section className="relative py-20 md:py-28 px-4 sm:px-6 lg:px-8">
           <Image
-            src="/images/store/indoor-1.jpg"
-            alt="967 Coffee Co. interior — warm Yemeni coffee shop in Roswell, GA"
+            src="/images/store/outdoor.jpg"
+            alt="967 Coffee Co. exterior — Yemeni coffee shop in Roswell, GA"
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className="object-cover object-[center_25%]"
           />
           <div
             className="absolute inset-0 bg-gradient-to-b from-espresso/70 via-espresso/60 to-espresso/80"
@@ -205,13 +205,13 @@ export default function AboutPage() {
               {storeImages.map((img) => (
                 <div
                   key={img.src}
-                  className="relative flex-shrink-0 w-[75vw] md:w-auto aspect-[4/3] rounded-xl overflow-hidden"
+                  className="relative flex-shrink-0 w-[60vw] md:w-auto aspect-[4/3] rounded-xl overflow-hidden"
                 >
                   <Image
                     src={img.src}
                     alt={img.alt}
                     fill
-                    sizes="(max-width: 768px) 75vw, 33vw"
+                    sizes="(max-width: 768px) 60vw, 33vw"
                     className="object-cover object-center"
                   />
                 </div>
