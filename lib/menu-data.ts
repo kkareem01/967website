@@ -14,9 +14,9 @@ export interface MenuCategory {
 
 export const MENU_CATEGORIES: readonly MenuCategory[] = [
   {
-    id: 'yemeni-coffee',
-    label: 'Yemeni Coffee',
-    description: "Centuries-old recipes, honoring Yemen's coffee heritage.",
+    id: 'yemeni-drinks',
+    label: 'Yemeni Drinks',
+    description: "Centuries-old recipes — honoring Yemen's coffee and tea heritage.",
     icon: '/images/icons/yemeni-coffee.png',
     items: [
       {
@@ -39,6 +39,17 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
         name: "Sana'ani",
         description: "Named after Yemen's capital — complex and deeply layered.",
         image: '/images/menu/sanaani.jpg',
+      },
+      {
+        name: 'Adeni Chai',
+        description:
+          'Bold, spiced tea from the port city of Aden — aromatic and layered.',
+        image: '/images/drinks/adeni.jpg',
+      },
+      {
+        name: 'Yemeni Tea',
+        description:
+          'A traditional Yemeni tea — rich, fragrant, and steeped in heritage.',
       },
     ],
   },
@@ -87,20 +98,6 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
         name: 'Hot Chocolate',
         description: 'Rich, creamy chocolate — comforting and indulgent.',
         image: '/images/menu/hot-chocolate.jpg',
-      },
-    ],
-  },
-  {
-    id: 'yemeni-tea',
-    label: 'Yemeni Tea',
-    description: 'Bold, spiced tea rooted in Yemeni tradition.',
-    icon: '/images/icons/yemeni-tea.png',
-    items: [
-      {
-        name: 'Adeni Chai',
-        description:
-          'Bold, spiced tea from the port city of Aden — aromatic and layered.',
-        image: '/images/drinks/adeni.jpg',
       },
     ],
   },
@@ -206,7 +203,7 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
       {
         name: 'Mango',
         description: 'Sweet mango with a citrus finish.',
-        image: '/images/drinks/mango-refresher.jpg',
+        image: '/images/menu/mango.jpg',
       },
       {
         name: 'Passion Fruit',
@@ -216,7 +213,7 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
       {
         name: 'Dragon Fruit',
         description: 'Vibrant and subtly sweet.',
-        image: '/images/drinks/dragon-refresher.jpg',
+        image: '/images/menu/dragon-fruit.jpg',
       },
       {
         name: 'Passion Fruit & Raspberry',

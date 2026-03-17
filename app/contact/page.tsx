@@ -55,7 +55,7 @@ export default function ContactPage() {
 
         {/* Contact Card */}
         <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24">
-          <div className="lg:max-w-md">
+          <div className="lg:max-w-md mx-auto">
             <div className="bg-cream rounded-2xl p-8 md:p-10 shadow-lg shadow-espresso/5">
               {/* Phone */}
               <div className="mb-8">
