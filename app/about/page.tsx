@@ -4,15 +4,16 @@ import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
 import { cafeSchema, breadcrumbSchema } from '@/lib/schema'
 
+const seoDescription =
+  'The story of 967 Coffee Co. Real Yemeni coffee. A warm place to gather. Built on hospitality. Roswell, GA.'
+
 export const metadata: Metadata = {
   title: 'About Us | Authentic Yemeni Coffee in Roswell, GA | 967 Coffee Co.',
-  description:
-    "Learn the story behind 967 Coffee Co. — bringing Yemen's centuries-old coffee culture to Roswell and the Atlanta area. Bold roots. Rich brews. Warm hearts.",
+  description: seoDescription,
   alternates: { canonical: 'https://www.967coffeeco.com/about' },
   openGraph: {
     title: 'About Us | Authentic Yemeni Coffee in Roswell, GA | 967 Coffee Co.',
-    description:
-      "Learn the story behind 967 Coffee Co. — bringing Yemen's centuries-old coffee culture to Roswell and the Atlanta area. Bold roots. Rich brews. Warm hearts.",
+    description: seoDescription,
     url: 'https://www.967coffeeco.com/about',
     siteName: '967 Coffee Co.',
     type: 'website',
@@ -28,6 +29,12 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image' },
 }
 
+const storeImages = [
+  { src: '/images/store/indoor-1.jpg', alt: '967 Coffee Co. main seating area with warm lighting' },
+  { src: '/images/store/indoor-2.jpg', alt: '967 Coffee Co. cozy corner with cultural decor' },
+  { src: '/images/store/indoor-3.jpg', alt: '967 Coffee Co. bar area and coffee preparation' },
+] as const
+
 export default function AboutPage() {
   return (
     <>
@@ -42,66 +49,45 @@ export default function AboutPage() {
       <div className="bg-off-white">
 
         {/* ── Hero ── */}
-        <div className="bg-espresso py-20 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
+        <section className="relative py-20 md:py-28 px-4 sm:px-6 lg:px-8">
+          <Image
+            src="/images/store/indoor-1.jpg"
+            alt="967 Coffee Co. interior — warm Yemeni coffee shop in Roswell, GA"
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+          <div
+            className="absolute inset-0 bg-gradient-to-b from-espresso/70 via-espresso/60 to-espresso/80"
+            aria-hidden="true"
+          />
+
+          <div className="relative z-10 max-w-3xl mx-auto text-center">
             <p className="font-inter text-[10px] tracking-[0.35em] uppercase text-caramel mb-6">
               Our Story
             </p>
-            <div className="w-8 h-px bg-caramel mx-auto mb-8" aria-hidden="true" />
+            <div className="w-8 h-px bg-caramel mx-auto mb-10" aria-hidden="true" />
             <h1>
-              <span className="font-dm-serif text-4xl md:text-6xl text-cream block leading-tight">
-                Rooted in Yemen,
+              <span className="font-dm-serif text-4xl md:text-5xl lg:text-6xl text-cream block leading-tight">
+                In Yemen, coffee isn&rsquo;t just a drink.
               </span>
-              <span className="font-dm-serif italic text-4xl md:text-6xl text-caramel block leading-tight mt-1">
-                Brewed in Atlanta.
+              <span className="font-dm-serif italic text-4xl md:text-5xl lg:text-6xl text-caramel block leading-tight mt-2">
+                It&rsquo;s how you say welcome.
               </span>
             </h1>
           </div>
-        </div>
+        </section>
 
-        {/* ── Stats Strip ── */}
-        <div className="bg-caramel py-10 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-6xl mx-auto">
-            <dl className="grid grid-cols-3 divide-x divide-espresso/20">
-              <div className="flex flex-col items-center text-center px-2 sm:px-8">
-                <dt className="font-dm-serif text-4xl md:text-6xl text-espresso leading-none">
-                  967
-                </dt>
-                <dd className="font-inter text-[10px] md:text-xs tracking-widest uppercase text-espresso/60 mt-2">
-                  Yemen&rsquo;s Country Code
-                </dd>
-              </div>
-              <div className="flex flex-col items-center text-center px-2 sm:px-8">
-                <dt className="font-dm-serif text-4xl md:text-6xl text-espresso leading-none">
-                  7,000<span className="text-2xl md:text-4xl"> ft</span>
-                </dt>
-                <dd className="font-inter text-[10px] md:text-xs tracking-widest uppercase text-espresso/60 mt-2">
-                  Growing Elevation
-                </dd>
-              </div>
-              <div className="flex flex-col items-center text-center px-2 sm:px-8">
-                <dt className="font-dm-serif text-4xl md:text-6xl text-espresso leading-none">
-                  600+
-                </dt>
-                <dd className="font-inter text-[10px] md:text-xs tracking-widest uppercase text-espresso/60 mt-2">
-                  Years of Heritage
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-
-        {/* ── Content sections ── */}
+        {/* ── Content Sections ── */}
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 space-y-16 md:space-y-24">
 
-          {/* 1. Origin Story */}
+          {/* 1. Origin — Image + Text Split */}
           <section className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch rounded-2xl overflow-hidden">
-
-            {/* Image — left, portrait */}
-            <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[560px] order-first">
+            <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[560px] order-last">
               <Image
                 src="/images/store/indoor-3.jpg"
-                alt="967 Coffee Co. interior — warm, inviting atmosphere in Roswell GA"
+                alt="967 Coffee Co. interior — warm lighting and inviting atmosphere in Roswell GA"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center"
@@ -112,101 +98,128 @@ export default function AboutPage() {
               />
             </div>
 
-            {/* Text — right */}
             <div className="bg-off-white px-8 py-12 md:px-12 md:py-16 lg:py-20 flex flex-col justify-center">
               <p className="font-inter text-[10px] tracking-[0.35em] uppercase text-caramel mb-4">
                 Origin
               </p>
               <h2 className="font-dm-serif text-3xl md:text-4xl text-espresso mb-6 leading-tight">
-                Rooted in Yemen,{' '}
-                <span className="italic text-coffee">Brewed in Atlanta</span>
+                967 is Yemen&rsquo;s{' '}
+                <span className="italic text-coffee">calling code.</span>
               </h2>
 
-              <blockquote className="border-l-2 border-caramel pl-5 mb-6">
-                <p className="font-dm-serif italic text-lg md:text-xl text-coffee leading-relaxed">
-                  &ldquo;Before Starbucks, before espresso, Yemeni farmers were
-                  cultivating the world&rsquo;s most prized beans at 7,000 feet.&rdquo;
-                </p>
-              </blockquote>
-
-              <div className="font-inter text-sm text-coffee/80 leading-relaxed space-y-4">
+              <div className="font-inter text-sm md:text-base text-coffee/80 leading-relaxed space-y-4">
                 <p>
-                  The name <strong>967 Coffee Co.</strong> isn&rsquo;t random — it&rsquo;s Yemen&rsquo;s
-                  international calling code. A daily reminder of where we come from. Yemen
-                  sits at the origin of coffee itself, with ancient terraced farms producing
-                  beans of a complexity that modern mass-produced coffee simply cannot replicate.
+                  We named our shop after Yemen&rsquo;s phone code. It is a reminder
+                  of where coffee started. Yemen grew the first coffee beans over
+                  600 years ago. High up in the mountains. At 7,000 feet. Farmed by
+                  hand. Dried in the sun.
                 </p>
                 <p>
-                  Located in Roswell, GA, we&rsquo;ve built a space where everyone is welcome —
-                  whether you&rsquo;re here to study, meet friends, or simply sit and enjoy
-                  something extraordinary. Open late on weekends because great coffee
-                  doesn&rsquo;t have a bedtime.
+                  We brought that story to Roswell, Georgia. A place where everyone
+                  is welcome. Where the coffee is real. And the doors stay open late.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* 2. Flavors — Beverage Cards */}
-          <section className="bg-cream rounded-3xl p-8 md:p-12">
-            <div className="mb-10">
-              <p className="font-inter text-[10px] tracking-[0.35em] uppercase text-caramel mb-3">
-                Cultural Beverages
-              </p>
-              <h2 className="font-dm-serif text-3xl md:text-4xl text-espresso">
-                Flavors That Tell a Story
-              </h2>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-
-              {/* Qishr Card */}
-              <div className="bg-espresso rounded-2xl p-7 md:p-8 flex flex-col gap-4">
-                <div>
-                  <p className="font-inter text-[10px] tracking-[0.3em] uppercase text-caramel/70 mb-1">
-                    Traditional Yemeni
-                  </p>
-                  <h3 className="font-dm-serif text-3xl text-cream">Qishr</h3>
-                  <p className="font-dm-serif italic text-base text-caramel mt-0.5">
-                    Spiced coffee husk brew
-                  </p>
-                </div>
-                <div className="w-10 h-px bg-caramel/40" aria-hidden="true" />
-                <p className="font-inter text-sm text-cream/70 leading-relaxed">
-                  One of our most beloved offerings — a traditional Yemeni spiced coffee
-                  brewed with ginger and coffee husks rather than the bean itself. Warm,
-                  aromatic, and carrying thousands of years of cultural memory in every cup.
-                </p>
-              </div>
-
-              {/* Kahwa Card */}
-              <div className="bg-coffee rounded-2xl p-7 md:p-8 flex flex-col gap-4">
-                <div>
-                  <p className="font-inter text-[10px] tracking-[0.3em] uppercase text-caramel/70 mb-1">
-                    Traditional Yemeni
-                  </p>
-                  <h3 className="font-dm-serif text-3xl text-cream">Kahwa</h3>
-                  <p className="font-dm-serif italic text-base text-caramel mt-0.5">
-                    Green bean, cardamom &amp; saffron
-                  </p>
-                </div>
-                <div className="w-10 h-px bg-caramel/40" aria-hidden="true" />
-                <p className="font-inter text-sm text-cream/70 leading-relaxed">
-                  In Yemeni culture, coffee is never just a drink — it&rsquo;s an invitation.
-                  Kahwa, made with lightly roasted green beans, cardamom, and saffron, is
-                  traditionally served to guests as a gesture of welcome.
-                </p>
-              </div>
-
-            </div>
-
-            <p className="font-inter text-sm text-coffee/70 leading-relaxed mt-8 max-w-2xl">
-              At 967 Coffee Co., every drink on our menu honors this tradition — from our
-              specialty lattes to our traditional Yemeni beverages. You won&rsquo;t find these
-              flavors at a chain coffee shop. This is something genuinely different.
+          {/* 2. Philosophy — Full-Width Text */}
+          <section className="max-w-3xl mx-auto text-center py-4 md:py-8">
+            <p className="font-inter text-[10px] tracking-[0.35em] uppercase text-caramel mb-4">
+              What We Believe
             </p>
+            <h2 className="font-dm-serif text-3xl md:text-5xl text-espresso mb-8 leading-tight">
+              Every cup tells a story.
+            </h2>
+            <p className="font-inter text-sm md:text-base text-coffee/80 leading-relaxed max-w-2xl mx-auto">
+              We pick the best beans. We use old ways to make them. Spices. Slow
+              roasting. Recipes passed down for ages. Every drink we serve has a
+              story behind it. A place it came from. A reason it tastes the way it
+              does. That is what makes us different.
+            </p>
+            <div className="w-12 h-px bg-caramel mx-auto mt-10" aria-hidden="true" />
           </section>
 
-          {/* 3. Pull Quote — Hospitality */}
+          {/* 3. Bean Sourcing — Reverse Split (text left, image right) */}
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch rounded-2xl overflow-hidden">
+            <div className="bg-off-white px-8 py-12 md:px-12 md:py-16 lg:py-20 flex flex-col justify-center order-last lg:order-first">
+              <p className="font-inter text-[10px] tracking-[0.35em] uppercase text-caramel mb-4">
+                Our Beans
+              </p>
+              <h2 className="font-dm-serif text-3xl md:text-4xl text-espresso mb-6 leading-tight">
+                From Yemen&rsquo;s highlands{' '}
+                <span className="italic text-coffee">to your cup.</span>
+              </h2>
+
+              <div className="font-inter text-sm md:text-base text-coffee/80 leading-relaxed space-y-4">
+                <p>
+                  Our beans grow high up in Yemen&rsquo;s mountains. Farmers pick
+                  them by hand. They dry them in the sun. This is how it has been
+                  done for hundreds of years.
+                </p>
+                <p>
+                  When you drink our coffee, you taste that care. That history. That
+                  freshness. No shortcuts. No mass-produced blends. Just real coffee
+                  from the place where it all began.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[560px]">
+              <Image
+                src="/images/store/indoor-2.jpg"
+                alt="Coffee preparation at 967 Coffee Co. — handcrafted with care"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover object-center"
+              />
+              <div
+                className="absolute inset-0 bg-gradient-to-t from-espresso/30 via-transparent to-transparent"
+                aria-hidden="true"
+              />
+            </div>
+          </section>
+
+          {/* 4. The Majlis — The Space */}
+          <section className="bg-cream rounded-3xl p-8 md:p-12">
+            <div className="max-w-2xl mx-auto text-center mb-10">
+              <p className="font-inter text-[10px] tracking-[0.35em] uppercase text-caramel mb-4">
+                The Space
+              </p>
+              <h2 className="font-dm-serif text-3xl md:text-5xl text-espresso mb-3 leading-tight">
+                A modern-day majlis.
+              </h2>
+              <p className="font-dm-serif italic text-lg md:text-xl text-coffee mt-1 mb-8">
+                A place to gather, unwind, and feel at home.
+              </p>
+              <p className="font-inter text-sm md:text-base text-coffee/80 leading-relaxed">
+                In our culture, the majlis is where people come together. To talk.
+                To laugh. To share tea and coffee. Our cafe is built on that idea.
+                Come study. Come meet friends. Come sit alone with your thoughts.
+                Late-night talks over Adeni chai. Morning coffee before work. You
+                belong here.
+              </p>
+            </div>
+
+            {/* Image Strip */}
+            <div className="flex gap-3 overflow-x-auto scrollbar-hide md:grid md:grid-cols-3 md:gap-4">
+              {storeImages.map((img) => (
+                <div
+                  key={img.src}
+                  className="relative flex-shrink-0 w-[75vw] md:w-auto aspect-[4/3] rounded-xl overflow-hidden"
+                >
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    sizes="(max-width: 768px) 75vw, 33vw"
+                    className="object-cover object-center"
+                  />
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* 5. Hospitality Pull Quote */}
           <section className="max-w-3xl mx-auto text-center py-4">
             <p
               className="font-dm-serif text-8xl md:text-9xl text-caramel/20 leading-none select-none"
@@ -216,25 +229,24 @@ export default function AboutPage() {
             </p>
             <blockquote className="-mt-8 md:-mt-12">
               <p className="font-dm-serif italic text-3xl md:text-4xl lg:text-5xl text-espresso leading-tight">
-                Hospitality isn&rsquo;t a policy&nbsp;&mdash;
+                Hospitality is not something we add&nbsp;on.
                 <br />
-                it&rsquo;s a heritage.
+                It is our foundation.
               </p>
             </blockquote>
             <div className="w-12 h-px bg-caramel mx-auto my-8" aria-hidden="true" />
             <p className="font-inter text-sm md:text-base text-coffee/70 leading-relaxed max-w-xl mx-auto">
-              In Yemeni culture, offering coffee to a guest is an act of deep respect and warmth —
-              that ethos lives in how we greet you, craft your drink, and design our space.
-              967 Coffee Co. is built to feel like a second home for Roswell and the greater
-              Atlanta community.
+              When you walk in, you are not a customer. You are a guest. That is how
+              it works in our culture. We serve you the way we would serve family.
+              That will never change.
             </p>
           </section>
 
-          {/* 4. Visit Us — Editorial Photo Background */}
+          {/* 6. Visit Us CTA */}
           <section className="relative rounded-3xl overflow-hidden">
             <div className="absolute inset-0">
               <Image
-                src="/images/other/editorial-1.jpg"
+                src="/images/store/outdoor.jpg"
                 alt=""
                 fill
                 sizes="(max-width: 1536px) 100vw, 1152px"
@@ -245,11 +257,8 @@ export default function AboutPage() {
             <div className="absolute inset-0 bg-espresso/80" aria-hidden="true" />
 
             <div className="relative z-10 p-8 md:p-14 text-center">
-              <p className="font-inter text-[10px] tracking-[0.35em] uppercase text-caramel mb-5">
-                Find Us
-              </p>
               <h2 className="font-dm-serif text-3xl md:text-5xl text-cream mb-4">
-                Visit Us for a Taste of Yemen
+                Come sit with us.
               </h2>
               <p className="font-inter text-cream/70 text-sm mb-8">
                 11235 Alpharetta Highway Suite 136, Roswell, GA 30076
@@ -259,15 +268,15 @@ export default function AboutPage() {
                   href="https://www.google.com/maps/dir//967+Coffee+Co,+11235+Alpharetta+Hwy+Suite+136,+Roswell,+GA+30076"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center bg-caramel text-espresso font-inter font-semibold px-8 py-3 rounded-full min-h-[44px] hover:bg-gold hover:scale-105 transition-all"
+                  className="w-full sm:w-auto inline-flex items-center justify-center bg-caramel text-espresso font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:bg-gold transition-all"
                 >
                   Get Directions
                 </a>
                 <Link
-                  href="/contact"
-                  className="w-full sm:w-auto inline-flex items-center justify-center border-2 border-cream text-cream font-inter font-semibold px-8 py-3 rounded-full min-h-[44px] hover:bg-cream hover:text-espresso hover:scale-105 transition-all"
+                  href="/menu"
+                  className="w-full sm:w-auto inline-flex items-center justify-center border border-cream/40 text-cream font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:border-cream/80 hover:bg-cream/5 transition-all"
                 >
-                  Contact Us
+                  View Our Menu
                 </Link>
               </div>
             </div>

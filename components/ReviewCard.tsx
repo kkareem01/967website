@@ -52,7 +52,7 @@ function GoogleGBadge() {
 
 export default function ReviewCard({ name, initials, color, stars, excerpt }: ReviewCardProps) {
   return (
-    <div className="bg-latte rounded-2xl p-6 border border-coffee/10 shadow-sm flex flex-col gap-4 relative">
+    <div className="bg-white rounded-2xl p-6 border border-coffee/10 shadow-sm flex flex-col gap-4 relative">
       {/* Avatar + Name */}
       <div className="flex items-center gap-3">
         <div

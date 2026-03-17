@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[85vh] flex items-center justify-center">
+    <section className="relative min-h-[75vh] flex items-center justify-center">
       {/* Background image */}
       <Image
         src="/images/store/indoor-1.jpg"
@@ -18,11 +18,6 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto py-8">
-        {/* Location label */}
-        <p className="font-inter text-[10px] md:text-xs tracking-[0.3em] uppercase text-caramel mb-10">
-          Alpharetta, Georgia
-        </p>
-
         {/* Brand name — split into two lines */}
         <h1 className="mb-0">
           <span className="font-dm-serif text-[96px] md:text-[128px] lg:text-[156px] text-cream block leading-none">
@@ -34,7 +29,7 @@ export default function HeroSection() {
         </h1>
 
         {/* Tagline */}
-        <p className="font-inter text-[10px] md:text-xs tracking-[0.3em] uppercase text-cream/50 mt-8 mb-12">
+        <p className="font-inter text-[10px] md:text-xs tracking-[0.3em] uppercase text-cream/90 mt-8 mb-12">
           Authentic Yemeni Coffee
         </p>
 
@@ -50,9 +45,9 @@ export default function HeroSection() {
           </a>
           <Link
             href="/menu"
-            className="w-full sm:w-auto inline-flex items-center justify-center border border-cream/40 text-cream font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:border-cream/80 hover:bg-cream/5 transition-all"
+            className="w-full sm:w-auto inline-flex items-center justify-center bg-cream text-espresso font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:bg-cream/90 transition-all"
           >
-            View Our Menu
+            View Menu
           </Link>
         </div>
       </div>

@@ -150,7 +150,7 @@ export default function HomePage() {
           <div className="text-center mt-10">
             <Link
               href="/menu"
-              className="inline-flex items-center bg-caramel text-espresso font-inter font-semibold px-8 py-3 rounded-full min-h-[44px] hover:bg-gold hover:scale-105 transition-all"
+              className="inline-flex items-center bg-caramel text-espresso font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:bg-gold transition-all"
             >
               View Full Menu
             </Link>
@@ -199,7 +199,7 @@ export default function HomePage() {
               href="https://www.google.com/maps/dir//967+Coffee+Co,+11235+Alpharetta+Hwy+Suite+136,+Roswell,+GA+30076"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-caramel text-espresso font-inter font-semibold px-8 py-3 rounded-full min-h-[44px] hover:bg-gold hover:scale-105 transition-all"
+              className="inline-flex items-center bg-caramel text-espresso font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:bg-gold transition-all"
             >
               Get Directions
             </a>
@@ -232,7 +232,7 @@ export default function HomePage() {
               href="https://www.google.com/maps/dir//967+Coffee+Co,+11235+Alpharetta+Hwy+Suite+136,+Roswell,+GA+30076"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-caramel text-espresso text-sm font-semibold px-6 py-2.5 rounded-full min-h-[44px] hover:bg-gold transition-colors"
+              className="inline-flex items-center bg-caramel text-espresso font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:bg-gold transition-all"
             >
               Get Directions
             </a>
@@ -299,19 +299,19 @@ export default function HomePage() {
               href="https://www.google.com/maps/dir//967+Coffee+Co,+11235+Alpharetta+Hwy+Suite+136,+Roswell,+GA+30076"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center bg-caramel text-espresso font-inter font-semibold px-8 py-3 rounded-full min-h-[44px] hover:bg-gold hover:scale-105 transition-all"
+              className="inline-flex items-center justify-center min-w-[180px] bg-caramel text-espresso font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:bg-gold transition-all"
             >
               Get Directions
             </a>
             <a
               href="tel:+14702923108"
-              className="w-full sm:w-auto inline-flex items-center justify-center border-2 border-cream text-cream font-inter font-semibold px-8 py-3 rounded-full min-h-[44px] hover:bg-cream hover:text-espresso hover:scale-105 transition-all"
+              className="inline-flex items-center justify-center min-w-[180px] border border-cream/40 text-cream font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:border-cream/80 hover:bg-cream/5 transition-all"
             >
               Call Now
             </a>
             <Link
               href="/menu"
-              className="w-full sm:w-auto inline-flex items-center justify-center border-2 border-cream/60 text-cream/80 font-inter font-semibold px-8 py-3 rounded-full min-h-[44px] hover:border-cream hover:text-cream hover:scale-105 transition-all"
+              className="inline-flex items-center justify-center min-w-[180px] border border-cream/40 text-cream font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:border-cream/80 hover:bg-cream/5 transition-all"
             >
               View Menu
             </Link>

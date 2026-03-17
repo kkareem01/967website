@@ -38,26 +38,30 @@ export default function ContactPage() {
       />
 
       <div className="bg-off-white">
-        <div className="bg-espresso py-16 px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="font-dm-serif text-4xl md:text-5xl text-cream">
-              Contact 967 Coffee Co.
-            </h1>
-          </div>
-        </div>
+        {/* Editorial Header */}
+        <section className="max-w-3xl mx-auto text-center py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+          <p className="font-inter text-[10px] tracking-[0.35em] uppercase text-caramel mb-6">
+            Contact
+          </p>
+          <div className="w-8 h-px bg-caramel mx-auto mb-8" aria-hidden="true" />
+          <h1 className="font-dm-serif text-4xl md:text-5xl lg:text-6xl text-espresso">
+            Come say hello.
+          </h1>
+          <p className="font-inter text-sm md:text-base text-coffee/70 mt-4 max-w-xl mx-auto">
+            We&rsquo;d love to hear from you. Stop by, give us a call, or find
+            us online.
+          </p>
+        </section>
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 space-y-16">
-
-          {/* Contact Details */}
-          <section>
-            <h2 className="font-dm-serif text-2xl md:text-3xl text-espresso mb-8">
-              Let&rsquo;s Connect!
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div>
-                <h3 className="font-inter font-semibold text-xs uppercase tracking-widest text-caramel mb-3">
+        {/* Contact Card */}
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24">
+          <div className="lg:max-w-md">
+            <div className="bg-cream rounded-2xl p-8 md:p-10 shadow-lg shadow-espresso/5">
+              {/* Phone */}
+              <div className="mb-8">
+                <h2 className="font-inter font-semibold text-xs uppercase tracking-widest text-caramel mb-3">
                   Phone
-                </h3>
+                </h2>
                 <a
                   href="tel:+14702923108"
                   className="font-inter text-espresso text-lg font-semibold hover:text-caramel transition-colors"
@@ -65,10 +69,25 @@ export default function ContactPage() {
                   (470) 292-3108
                 </a>
               </div>
-              <div>
-                <h3 className="font-inter font-semibold text-xs uppercase tracking-widest text-caramel mb-3">
+
+              {/* Email */}
+              <div className="mb-8">
+                <h2 className="font-inter font-semibold text-xs uppercase tracking-widest text-caramel mb-3">
+                  Email
+                </h2>
+                <a
+                  href="mailto:admin@967coffeeco.com"
+                  className="font-inter text-espresso text-lg font-semibold hover:text-caramel transition-colors"
+                >
+                  admin@967coffeeco.com
+                </a>
+              </div>
+
+              {/* Address */}
+              <div className="mb-8">
+                <h2 className="font-inter font-semibold text-xs uppercase tracking-widest text-caramel mb-3">
                   Address
-                </h3>
+                </h2>
                 <address className="not-italic font-inter text-sm text-coffee leading-relaxed">
                   <p>11235 Alpharetta Highway Suite 136</p>
                   <p>Roswell, GA 30076</p>
@@ -77,151 +96,80 @@ export default function ContactPage() {
                   href="https://www.google.com/maps/dir//967+Coffee+Co,+11235+Alpharetta+Hwy+Suite+136,+Roswell,+GA+30076"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center mt-3 bg-caramel text-espresso text-xs font-semibold px-4 py-2 rounded-full min-h-[44px] hover:bg-gold transition-colors"
+                  className="inline-flex items-center mt-4 bg-caramel text-espresso text-xs font-semibold px-4 py-2 rounded-full min-h-[44px] hover:bg-gold transition-colors"
                 >
                   Get Directions
                 </a>
               </div>
-              <div>
-                <h3 className="font-inter font-semibold text-xs uppercase tracking-widest text-caramel mb-3">
-                  Social
-                </h3>
-                <ul className="space-y-2 text-sm font-inter">
-                  <li>
-                    <a
-                      href="https://www.instagram.com/967coffeeco/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-coffee hover:text-caramel transition-colors"
-                    >
-                      Instagram @967coffeeco
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.tiktok.com/@967.coffee.co"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-coffee hover:text-caramel transition-colors"
-                    >
-                      TikTok @967.coffee.co
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.facebook.com/profile.php?id=61564941164132"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-coffee hover:text-caramel transition-colors"
-                    >
-                      Facebook
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
 
-          {/* Hours */}
-          <section>
-            <h2 className="font-dm-serif text-2xl md:text-3xl text-espresso mb-6">Our Hours</h2>
-            <div className="bg-cream rounded-2xl p-6 md:p-8 inline-block">
-              <table className="text-sm font-inter">
-                <tbody>
-                  {[
-                    { day: 'Monday – Thursday', hours: '7:00 AM – 11:00 PM' },
-                    { day: 'Friday', hours: '7:00 AM – 2:00 AM' },
-                    { day: 'Saturday', hours: '9:00 AM – 2:00 AM' },
-                    { day: 'Sunday', hours: '9:00 AM – 10:00 PM' },
-                  ].map(({ day, hours }) => (
-                    <tr key={day} className="border-b border-latte last:border-0">
-                      <td className="pr-8 py-2.5 text-coffee/70">{day}</td>
-                      <td className="py-2.5 text-espresso font-semibold">{hours}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
-
-          {/* Map */}
-          <section>
-            <div className="rounded-2xl overflow-hidden border border-coffee/10 h-80">
-              <iframe
-                loading="lazy"
-                title="967 Coffee Co. location map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.3!2d-84.3162!3d34.0236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f576e30b3b6b57%3A0x1f2b9d3a8f3c5e6d!2s967%20Coffee%20Co!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
+              {/* Divider */}
+              <div
+                className="w-full h-px bg-caramel/20 mb-8"
+                aria-hidden="true"
               />
-            </div>
-          </section>
 
-          {/* Contact Form */}
-          <section>
-            <h2 className="font-dm-serif text-2xl md:text-3xl text-espresso mb-6">
-              Send Us a Message
-            </h2>
-            {/* TODO: Replace Formspree ID with actual form endpoint */}
-            <form
-              action="https://formspree.io/f/YOUR_FORM_ID"
-              method="POST"
-              className="bg-cream rounded-2xl p-6 md:p-8 space-y-5 max-w-2xl"
-            >
+              {/* Social */}
               <div>
-                <label htmlFor="contact-name" className="block font-inter text-sm font-semibold text-espresso mb-1.5">
-                  Name
-                </label>
-                <input
-                  id="contact-name"
-                  name="name"
-                  type="text"
-                  required
-                  aria-label="Your name"
-                  placeholder="Jane Smith"
-                  className="w-full bg-off-white border border-coffee/20 rounded-xl px-4 py-3 text-sm font-inter text-espresso placeholder-coffee/40 focus:outline-none focus:border-caramel transition-colors"
-                />
+                <h2 className="font-inter font-semibold text-xs uppercase tracking-widest text-caramel mb-4">
+                  Follow Us
+                </h2>
+                <div className="flex items-center gap-5">
+                  <a
+                    href="https://www.instagram.com/967coffeeco/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="967 Coffee Co. on Instagram"
+                    className="text-coffee hover:text-caramel transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@967.coffee.co"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="967 Coffee Co. on TikTok"
+                    className="text-coffee hover:text-caramel transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.67a8.18 8.18 0 004.77 1.52V6.73a4.85 4.85 0 01-1-.04z" />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61564941164132"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="967 Coffee Co. on Facebook"
+                    className="text-coffee hover:text-caramel transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+                  >
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                  </a>
+                </div>
               </div>
-              <div>
-                <label htmlFor="contact-email" className="block font-inter text-sm font-semibold text-espresso mb-1.5">
-                  Email
-                </label>
-                <input
-                  id="contact-email"
-                  name="email"
-                  type="email"
-                  required
-                  aria-label="Your email address"
-                  placeholder="jane@example.com"
-                  className="w-full bg-off-white border border-coffee/20 rounded-xl px-4 py-3 text-sm font-inter text-espresso placeholder-coffee/40 focus:outline-none focus:border-caramel transition-colors"
-                />
-              </div>
-              <div>
-                <label htmlFor="contact-message" className="block font-inter text-sm font-semibold text-espresso mb-1.5">
-                  Message
-                </label>
-                <textarea
-                  id="contact-message"
-                  name="message"
-                  required
-                  rows={5}
-                  aria-label="Your message"
-                  placeholder="What's on your mind?"
-                  className="w-full bg-off-white border border-coffee/20 rounded-xl px-4 py-3 text-sm font-inter text-espresso placeholder-coffee/40 focus:outline-none focus:border-caramel transition-colors resize-none"
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full sm:w-auto inline-flex items-center justify-center bg-caramel text-espresso font-inter font-semibold px-8 py-3 rounded-full min-h-[44px] hover:bg-gold hover:scale-105 transition-all"
-              >
-                Send Message
-              </button>
-            </form>
-          </section>
-        </div>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   )
