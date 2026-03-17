@@ -9,6 +9,19 @@ interface MenuCategorySectionProps {
   readonly isFirst: boolean
 }
 
+function MenuItemText({ item }: { readonly item: MenuItem }) {
+  return (
+    <div className="py-3">
+      <h3 className="font-inter font-bold text-espresso text-sm leading-tight">
+        {item.name}
+      </h3>
+      <p className="text-coffee/60 text-xs mt-1 leading-relaxed">
+        {item.description}
+      </p>
+    </div>
+  )
+}
+
 function MenuItemCard({ item }: { readonly item: MenuItem }) {
   const [imgError, setImgError] = useState(false)
   const showPlaceholder = !item.image || imgError
@@ -78,11 +91,19 @@ export default function MenuCategorySection({
         </h2>
         <p className="text-coffee/70 text-sm mt-1">{category.description}</p>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8">
-        {category.items.map((item) => (
-          <MenuItemCard key={item.name} item={item} />
-        ))}
-      </div>
+      {category.id === 'coffee' ? (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-1">
+          {category.items.map((item) => (
+            <MenuItemText key={item.name} item={item} />
+          ))}
+        </div>
+      ) : (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8">
+          {category.items.map((item) => (
+            <MenuItemCard key={item.name} item={item} />
+          ))}
+        </div>
+      )}
     </section>
   )
 }
