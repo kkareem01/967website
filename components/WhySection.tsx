@@ -45,10 +45,10 @@ function ConsistencyIllustration() {
         return (
           <line
             key={angle}
-            x1={100 + 75 * Math.cos(rad)}
-            y1={100 + 75 * Math.sin(rad)}
-            x2={100 + 68 * Math.cos(rad)}
-            y2={100 + 68 * Math.sin(rad)}
+            x1={Math.round((100 + 75 * Math.cos(rad)) * 100) / 100}
+            y1={Math.round((100 + 75 * Math.sin(rad)) * 100) / 100}
+            x2={Math.round((100 + 68 * Math.cos(rad)) * 100) / 100}
+            y2={Math.round((100 + 68 * Math.sin(rad)) * 100) / 100}
             stroke="currentColor"
             strokeWidth="1.2"
             opacity="0.15"
@@ -70,10 +70,10 @@ function HoursIllustration() {
         return (
           <line
             key={i}
-            x1={100 + 60 * Math.cos(rad)}
-            y1={100 + 60 * Math.sin(rad)}
-            x2={100 + 68 * Math.cos(rad)}
-            y2={100 + 68 * Math.sin(rad)}
+            x1={Math.round((100 + 60 * Math.cos(rad)) * 100) / 100}
+            y1={Math.round((100 + 60 * Math.sin(rad)) * 100) / 100}
+            x2={Math.round((100 + 68 * Math.cos(rad)) * 100) / 100}
+            y2={Math.round((100 + 68 * Math.sin(rad)) * 100) / 100}
             stroke="currentColor"
             strokeWidth={i % 3 === 0 ? '2' : '1'}
             opacity={i % 3 === 0 ? '0.2' : '0.1'}
