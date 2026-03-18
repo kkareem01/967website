@@ -97,6 +97,7 @@ export default function CategoryNav({ categories }: CategoryNavProps) {
                   width={56}
                   height={56}
                   className="w-full h-full object-cover"
+                  style={category.id === 'lattes' ? { objectPosition: '40% 20%', transform: 'scale(1.2)' } : undefined}
                 />
               </div>
               <span
