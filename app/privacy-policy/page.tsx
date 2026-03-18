@@ -94,8 +94,8 @@ export default function PrivacyPolicyPage() {
               Clover's privacy policy.
             </li>
             <li>
-              <strong>Formspree:</strong> Used to process contact form submissions. Subject to
-              Formspree's privacy policy.
+              <strong>FormSubmit:</strong> Used to process career application form submissions.
+              Subject to FormSubmit&rsquo;s privacy policy.
             </li>
           </ul>
         </section>

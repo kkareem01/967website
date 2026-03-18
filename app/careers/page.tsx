@@ -74,11 +74,14 @@ export default function CareersPage() {
           </h2>
 
           <form
-            action="https://formspree.io/f/YOUR_FORM_ID"
+            action="https://formsubmit.co/khatibkareem983@gmail.com"
             method="POST"
             encType="multipart/form-data"
             className="space-y-5 text-left"
           >
+            <input type="hidden" name="_subject" value="New Career Application — 967 Coffee Co." />
+            <input type="hidden" name="_next" value="https://www.967coffeeco.com/careers" />
+            <input type="hidden" name="_captcha" value="true" />
             {/* First Name + Last Name */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
