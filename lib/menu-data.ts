@@ -2,6 +2,7 @@ export interface MenuItem {
   readonly name: string
   readonly description: string
   readonly image?: string
+  readonly imagePosition?: string
 }
 
 export interface MenuCategory {
@@ -44,12 +45,8 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
         name: 'Adeni Chai',
         description:
           'Bold, spiced tea from the port city of Aden — aromatic and layered.',
-        image: '/images/drinks/adeni.jpg',
-      },
-      {
-        name: 'Yemeni Tea',
-        description:
-          'A traditional Yemeni tea — rich, fragrant, and steeped in heritage.',
+        image: '/images/menu/adeni-chai.jpg',
+        imagePosition: 'center 55%',
       },
     ],
   },
@@ -108,14 +105,24 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
     icon: '/images/icons/lattes.png',
     items: [
       {
-        name: 'Latte',
-        description: 'Classic espresso and steamed milk — simple and smooth.',
-        image: '/images/drinks/iced-latte.jpg',
+        name: 'Iced Yemeni Latte',
+        description: 'Our signature Yemeni Latte, chilled over ice.',
+        image: '/images/menu/iced-yemeni-latte.jpg',
       },
       {
         name: 'Iced Pistachio Latte',
         description: 'Rich espresso meets velvety pistachio cream.',
         image: '/images/menu/pistachio-latte.jpg',
+      },
+      {
+        name: 'Iced Mocha Latte',
+        description: 'Chocolate and espresso over ice.',
+        image: '/images/menu/iced-mocha-latte.jpg',
+      },
+      {
+        name: 'Iced Matcha Latte',
+        description: 'Ceremonial grade matcha, smooth and earthy over ice.',
+        image: '/images/menu/iced-matcha-latte.jpg',
       },
       {
         name: 'White Chocolate Raspberry Latte',
@@ -128,29 +135,9 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
         image: '/images/menu/tiramisu-latte.png',
       },
       {
-        name: 'Yemeni Latte',
-        description: 'Our house latte — bold, spiced, and deeply aromatic.',
-        image: '/images/drinks/iced-adeni.jpg',
-      },
-      {
-        name: 'Iced Yemeni Latte',
-        description: 'Our signature Yemeni Latte, chilled over ice.',
-        image: '/images/menu/iced-yemeni-latte.jpg',
-      },
-      {
         name: 'Spanish Latte',
         description: 'Creamy, sweet, and perfectly balanced.',
         image: '/images/menu/spanish-latte.jpg',
-      },
-      {
-        name: 'Mocha Latte',
-        description: 'Chocolate and espresso in perfect harmony.',
-        image: '/images/menu/mocha-latte.jpg',
-      },
-      {
-        name: 'Iced Mocha Latte',
-        description: 'Chocolate and espresso over ice.',
-        image: '/images/menu/iced-mocha-latte.jpg',
       },
       {
         name: 'Biscoff Latte',
@@ -163,14 +150,22 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
         image: '/images/menu/caramel-macchiato-latte.jpg',
       },
       {
+        name: 'Yemeni Latte',
+        description: 'Our house latte — bold, spiced, and deeply aromatic.',
+        image: '/images/menu/yemeni-latte.jpg',
+        imagePosition: 'center 35%',
+      },
+      {
+        name: 'Mocha Latte',
+        description: 'Chocolate and espresso in perfect harmony.',
+        image: '/images/menu/mocha-latte.jpg',
+        imagePosition: 'center 30%',
+      },
+      {
         name: 'Matcha Latte',
         description: 'Ceremonial grade matcha, warm and comforting.',
         image: '/images/menu/matcha-latte.jpg',
-      },
-      {
-        name: 'Iced Matcha Latte',
-        description: 'Ceremonial grade matcha, smooth and earthy over ice.',
-        image: '/images/menu/iced-matcha-latte.jpg',
+        imagePosition: 'center 44%',
       },
     ],
   },

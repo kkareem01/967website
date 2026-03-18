@@ -58,6 +58,7 @@ function MenuItemCard({ item }: { readonly item: MenuItem }) {
             fill
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
             className="object-cover group-hover:scale-105 transition-transform duration-500"
+            style={item.imagePosition ? { objectPosition: item.imagePosition } : undefined}
             onError={() => setImgError(true)}
           />
         )}
