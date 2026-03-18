@@ -10,6 +10,7 @@ export default function HeroSection() {
         alt="967 Coffee Co. interior — warm Yemeni coffee shop in Roswell, GA"
         fill
         priority
+        fetchPriority="high"
         sizes="100vw"
         className="object-cover"
       />

@@ -54,7 +54,7 @@ function MenuItemCard({ item }: { readonly item: MenuItem }) {
         ) : (
           <Image
             src={item.image}
-            alt={item.name}
+            alt={`${item.name} — ${item.description}`}
             fill
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
             className="object-cover group-hover:scale-105 transition-transform duration-500"

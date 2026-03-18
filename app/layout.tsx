@@ -4,7 +4,6 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import './globals.css'
 
 

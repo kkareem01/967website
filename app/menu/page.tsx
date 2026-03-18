@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import JsonLd from '@/components/JsonLd'
-import { cafeSchema, breadcrumbSchema } from '@/lib/schema'
+import { cafeSchema, breadcrumbSchema, menuSchema as buildMenuSchema } from '@/lib/schema'
 import { MENU_CATEGORIES } from '@/lib/menu-data'
 import CategoryNav from '@/components/menu/CategoryNav'
 import MenuCategorySection from '@/components/menu/MenuCategorySection'
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: { card: 'summary_large_image' },
 }
 
-const menuSchema = {
+const cafeMenuSchema = {
   ...cafeSchema,
   hasMenu: 'https://www.967coffeeco.com/menu',
 }
@@ -37,7 +37,8 @@ const menuSchema = {
 export default function MenuPage() {
   return (
     <>
-      <JsonLd data={menuSchema} />
+      <JsonLd data={cafeMenuSchema} />
+      <JsonLd data={buildMenuSchema(MENU_CATEGORIES)} />
       <JsonLd
         data={breadcrumbSchema([
           { name: 'Home', url: 'https://www.967coffeeco.com' },

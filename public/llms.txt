@@ -1,24 +1,44 @@
 # 967 Coffee Co.
-> Authentic Yemeni coffee shop in Roswell, GA (near Atlanta). Open until 2AM on weekends.
+
+> Authentic Yemeni coffee shop in Roswell, GA (near Atlanta) — serving specialty lattes, traditional Yemeni drinks, and handcrafted desserts. Open until 2AM on weekends.
 
 ## About
-967 Coffee Co. takes its name from Yemen's international calling code (+967). We bring centuries-old Yemeni coffee traditions — rooted in mountain farms dating back to the 15th century — to Roswell, GA and the greater Atlanta area.
+967 Coffee Co. takes its name from Yemen's international calling code (+967). We bring centuries-old Yemeni coffee traditions — rooted in mountain farms dating back to the 15th century — to Roswell, GA and the greater Atlanta area. Every cup is crafted with hospitality at its core.
 
 ## Location & Contact
 - Address: 11235 Alpharetta Highway Suite 136, Roswell, GA 30076
 - Phone: (470) 292-3108
-- Hours: Mon–Thu 7AM–11PM, Fri 7AM–2AM, Sat 9AM–2AM, Sun 9AM–10PM
+- Email: admin@967coffeeco.com
+- Website: https://www.967coffeeco.com
 
-## Pages
-- /: Homepage with menu overview, hours, and FAQ
-- /about: Full brand story and Yemeni coffee education
-- /menu: Complete drink menu — specialty lattes, Yemeni drinks, refreshers, coffee
-- /contact: Location, hours, map, contact form
-- /partnerships: Franchise and catering partnership inquiries
-- /careers: Job opportunities at 967 Coffee Co.
+## Hours
+- Sunday–Thursday: 7:00 AM – 12:00 AM
+- Friday–Saturday: 7:00 AM – 2:00 AM
+
+## Menu Highlights
+- **Yemeni Drinks**: Malaki, Qishr, Mufawar, Sana'ani, Adeni Chai, Iced Adeni Chai
+- **Coffee**: Espresso, Cappuccino, Flat White, Americano, Cortado, Affogato
+- **Lattes**: Yemeni Latte, Pistachio Latte, Biscoff Latte, Tiramisu Latte, Spanish Latte, Matcha Latte, Mocha Latte
+- **Refreshers**: Strawberry, Mango, Passion Fruit, Dragon Fruit, Yemeni Lemonade, Mint Lemonade
+- **Sweets**: Pistachio Milkcake, Biscoff Milkcake, Rose Milkcake, Dubai Chocolate, Honeycomb varieties
 
 ## Key Facts
-- Specialty: Authentic Yemeni coffee (qishr, kahwa, Yemeni latte)
+- Rating: 4.9 stars from 600+ Google reviews
+- Cuisine: Yemeni, Specialty Coffee, Middle Eastern
 - Price range: $$
-- Open late: Until 2AM Friday & Saturday
+- Established: 2025
+- Open 7 days a week, late nights on weekends
 - Online ordering: Available via Clover
+
+## Social Media
+- Instagram: https://www.instagram.com/967coffeeco/
+- TikTok: https://www.tiktok.com/@967.coffee.co
+- Facebook: https://www.facebook.com/profile.php?id=61564941164132
+
+## Pages
+- /: Homepage with featured products, reviews, hours, and FAQ
+- /about: Full brand story and Yemeni coffee education
+- /menu: Complete drink and dessert menu (50+ items)
+- /contact: Location, hours, map, contact info
+- /partnerships: Franchise, catering, and corporate partnership opportunities
+- /careers: Job opportunities at 967 Coffee Co.

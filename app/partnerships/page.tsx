@@ -103,6 +103,7 @@ export default function PartnershipsPage() {
           alt="967 Coffee Co. interior — warm, inviting space for authentic Yemeni coffee"
           fill
           priority
+          fetchPriority="high"
           sizes="100vw"
           className="object-cover"
         />
@@ -264,7 +265,7 @@ export default function PartnershipsPage() {
         <div className="absolute inset-0">
           <Image
             src="/images/store/outdoor.jpg"
-            alt=""
+            alt="967 Coffee Co. outdoor seating area — Roswell, GA"
             fill
             sizes="100vw"
             className="object-cover"

@@ -29,8 +29,8 @@ export const cafeSchema = {
   ],
   aggregateRating: {
     '@type': 'AggregateRating',
-    ratingValue: '4.9',
-    reviewCount: '600',
+    ratingValue: 4.9,
+    reviewCount: 600,
   },
 }
 
@@ -44,6 +44,7 @@ export const websiteSchema = {
     target: 'https://www.967coffeeco.com/menu?q={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
+  /* TODO: Implement actual menu search at /menu?q= or remove SearchAction */
 }
 
 export const breadcrumbSchema = (items: { name: string; url: string }[]) => ({
@@ -91,4 +92,29 @@ export const jobPostingSchema = {
     },
   },
   datePosted: '2026-01-01',
+  validThrough: '2026-12-31',
 }
+
+export const menuSchema = (
+  categories: readonly {
+    readonly label: string
+    readonly items: readonly { readonly name: string; readonly description: string; readonly image?: string }[]
+  }[]
+) => ({
+  '@context': 'https://schema.org',
+  '@type': 'Menu',
+  name: '967 Coffee Co. Menu',
+  url: 'https://www.967coffeeco.com/menu',
+  hasMenuSection: categories.map((cat) => ({
+    '@type': 'MenuSection',
+    name: cat.label,
+    hasMenuItem: cat.items.map((item) => ({
+      '@type': 'MenuItem',
+      name: item.name,
+      description: item.description,
+      ...(item.image
+        ? { image: `https://www.967coffeeco.com${item.image}` }
+        : {}),
+    })),
+  })),
+})

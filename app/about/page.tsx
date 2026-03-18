@@ -55,6 +55,7 @@ export default function AboutPage() {
             alt="967 Coffee Co. exterior — Yemeni coffee shop in Roswell, GA"
             fill
             priority
+            fetchPriority="high"
             sizes="100vw"
             className="object-cover object-[center_25%]"
           />
