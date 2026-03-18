@@ -128,11 +128,12 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
         name: 'White Chocolate Raspberry Latte',
         description: 'Sweet white chocolate with bright raspberry notes.',
         image: '/images/menu/white-chocolate-raspberry-latte.jpg',
+        imagePosition: 'center 45%',
       },
       {
         name: 'Tiramisu Latte',
         description: 'Inspired by the classic Italian dessert.',
-        image: '/images/menu/tiramisu-latte.png',
+        image: '/images/menu/tiramisu-latte.jpg',
       },
       {
         name: 'Spanish Latte',
