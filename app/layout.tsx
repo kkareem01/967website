@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, DM_Serif_Display } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from '@vercel/analytics/next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import './globals.css'
@@ -50,6 +51,7 @@ export default function RootLayout({
         <Footer />
         <GoogleAnalytics gaId="G-XXXXXXXXXX" /> {/* TODO: Replace with real GA4 ID */}
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   )
