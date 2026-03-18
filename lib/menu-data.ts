@@ -48,6 +48,12 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
         image: '/images/menu/adeni-chai.jpg',
         imagePosition: 'center 55%',
       },
+      {
+        name: 'Iced Adeni Chai',
+        description: 'Our signature Adeni Chai, chilled and served over ice.',
+        image: '/images/menu/iced-adeni-chai.jpg',
+        imagePosition: 'center 85%',
+      },
     ],
   },
   {
