@@ -197,7 +197,7 @@ function ValueCard({
   return (
     <div
       ref={cardRef}
-      className="why-card group flex-shrink-0 w-[52vw] sm:w-[200px] lg:w-[calc(20%-0.8rem)] bg-white rounded-2xl border border-coffee/[0.06] shadow-sm hover:shadow-md transition-shadow duration-500 overflow-hidden flex flex-col snap-start"
+      className="why-card group flex-shrink-0 w-[52vw] h-[340px] sm:w-[200px] sm:h-auto lg:w-[calc(20%-0.8rem)] bg-white rounded-2xl border border-coffee/[0.06] shadow-sm hover:shadow-md transition-shadow duration-500 overflow-hidden flex flex-col snap-start"
     >
       {/* Content — top left */}
       <div className="px-5 pt-5 pb-3">
