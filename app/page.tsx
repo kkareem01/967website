@@ -6,6 +6,7 @@ import ProductCard from '@/components/ProductCard'
 import ReviewCard from '@/components/ReviewCard'
 import WhySection from '@/components/WhySection'
 import FaqSection from '@/components/FaqSection'
+import SocialSection from '@/components/SocialSection'
 import JsonLd from '@/components/JsonLd'
 import { cafeSchema, websiteSchema, faqSchema } from '@/lib/schema'
 
@@ -295,7 +296,10 @@ export default function HomePage() {
       {/* 6. FAQ */}
       <FaqSection faqs={faqs} />
 
-      {/* 7. Closing CTA */}
+      {/* 7. Socials */}
+      <SocialSection />
+
+      {/* 8. Closing CTA */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
         <Image
           src="/images/store/outdoor.jpg"

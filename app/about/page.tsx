@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import JsonLd from '@/components/JsonLd'
+import SocialSection from '@/components/SocialSection'
 import { cafeSchema, breadcrumbSchema } from '@/lib/schema'
 
 const seoDescription =
@@ -243,7 +244,10 @@ export default function AboutPage() {
             </p>
           </section>
 
-          {/* 6. Visit Us CTA */}
+          {/* 6. Socials */}
+          <SocialSection />
+
+          {/* 7. Visit Us CTA */}
           <section className="relative rounded-3xl overflow-hidden">
             <div className="absolute inset-0">
               <Image
