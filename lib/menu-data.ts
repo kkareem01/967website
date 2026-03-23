@@ -17,34 +17,32 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
   {
     id: 'yemeni-drinks',
     label: 'Yemeni Drinks',
-    description: "Centuries-old recipes — honoring Yemen's coffee and tea heritage.",
+    description: 'To honor the Traditional taste NO ALTERATIONS can be made.',
     icon: '/images/icons/yemeni-coffee.png',
     items: [
       {
         name: 'Malaki',
-        description: 'Rich, royal Yemeni coffee — dark, bold, and full-bodied.',
+        description: 'Light Roast with Coffee Husks, Cardamom, Ginger, Cinnamon & Cream',
         image: '/images/menu/malaki.jpg',
       },
       {
         name: 'Qishr',
-        description:
-          'Traditional spiced coffee brewed with ginger and coffee husks — a cultural staple.',
+        description: 'Coffee Husks with Cinnamon & Ginger',
         image: '/images/menu/qishr.jpg',
       },
       {
         name: 'Mufawar',
-        description: 'Aromatic Yemeni coffee with a smooth, mellow finish.',
+        description: 'Medium Roast Coffee with Cardamom & Cream',
         image: '/images/menu/mufawar.jpg',
       },
       {
         name: "Sana'ani",
-        description: "Named after Yemen's capital — complex and deeply layered.",
+        description: 'Medium Roast with Cardamom',
         image: '/images/menu/sanaani.jpg',
       },
       {
         name: 'Adeni Chai',
-        description:
-          'Bold, spiced tea from the port city of Aden — aromatic and layered.',
+        description: 'Premium Black Tea with Cardamom, Cinnamon, Nutmeg and Cream',
         image: '/images/menu/adeni-chai.jpg',
         imagePosition: 'center 55%',
       },
@@ -53,6 +51,11 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
         description: 'Our signature Adeni Chai, chilled and served over ice.',
         image: '/images/menu/iced-adeni-chai.jpg',
         imagePosition: 'center 85%',
+      },
+      {
+        name: 'Red Tea',
+        description: 'Premium Black Tea with Cloves, Cardamom & Mint',
+        image: '/images/menu/red-tea.jpg',
       },
     ],
   },
@@ -299,6 +302,19 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
         name: 'Dubai Chocolate Brownie',
         description: 'Dense chocolate brownie with a Dubai twist.',
         image: '/images/menu/dubai-chocolate-brownie.jpg',
+      },
+    ],
+  },
+  {
+    id: 'snacks',
+    label: 'Snacks',
+    description: 'Savory bites to pair with your drink.',
+    icon: '/images/icons/snacks.png',
+    items: [
+      {
+        name: 'Sambosa',
+        description: 'Traditional Yemeni pastry — crispy, savory, and spiced.',
+        image: '/images/menu/sambosa.jpg',
       },
     ],
   },

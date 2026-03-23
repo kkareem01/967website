@@ -117,7 +117,7 @@ const cards = [
   {
     eyebrow: 'The Coffee',
     headline: 'A different kind of bean.',
-    body: "Yemeni beans. Richer flavor. Brewed right. You'll taste the difference.",
+    body: 'Yemeni beans. Richer flavor. Brewed right.',
     Illustration: CoffeeIllustration,
     image: '/images/why/beans.jpg',
   },
@@ -138,8 +138,10 @@ const cards = [
   {
     eyebrow: 'The Hours',
     headline: 'Open when others aren\u2019t.',
-    body: 'Late nights. Early mornings. 967 Coffee Co. keeps your schedule.',
+    body: '967 Coffee Co. keeps your schedule.',
     Illustration: HoursIllustration,
+    image: '/images/why/hours.jpg',
+    imageClass: 'object-[center_40%]',
   },
   {
     eyebrow: 'The People',
@@ -160,6 +162,7 @@ function ValueCard({
   body,
   Illustration,
   image,
+  imageClass,
   index,
 }: {
   eyebrow: string
@@ -167,6 +170,7 @@ function ValueCard({
   body: string
   Illustration: () => React.JSX.Element
   image?: string
+  imageClass?: string
   index: number
 }) {
   const cardRef = useRef<HTMLDivElement>(null)
@@ -215,7 +219,7 @@ function ValueCard({
             src={image}
             alt={headline}
             fill
-            className="object-cover"
+            className={`object-cover ${imageClass ?? ''}`}
             sizes="(max-width: 640px) 52vw, (max-width: 1024px) 200px, 20vw"
           />
         </div>
@@ -251,7 +255,7 @@ export default function WhySection() {
 
       {/* Horizontal scroll track */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex gap-3 sm:gap-4 lg:gap-5 overflow-x-auto scrollbar-hide pb-4 -mb-4 snap-x snap-mandatory lg:overflow-x-visible lg:snap-none">
+        <div className="flex gap-3 sm:gap-4 lg:gap-5 overflow-x-auto scrollbar-hide pb-4 -mb-4 snap-x snap-proximity overscroll-x-contain lg:overflow-x-visible lg:snap-none">
           {cards.map((card, i) => (
             <ValueCard key={card.eyebrow} {...card} index={i} />
           ))}
