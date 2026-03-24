@@ -299,9 +299,8 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
         image: '/images/menu/dubai-chocolate.jpg',
       },
       {
-        name: 'Dubai Chocolate Brownie',
-        description: 'Dense chocolate brownie with a Dubai twist.',
-        image: '/images/menu/dubai-chocolate-brownie.jpg',
+        name: 'Cheesecakes',
+        description: 'Creamy, rich cheesecake — a perfect sweet finish.',
       },
     ],
   },
@@ -315,6 +314,10 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
         name: 'Sambosa',
         description: 'Traditional Yemeni pastry — crispy, savory, and spiced.',
         image: '/images/menu/sambosa.jpg',
+      },
+      {
+        name: 'Empanadas',
+        description: 'Golden, crispy pastries with a savory filling.',
       },
     ],
   },
