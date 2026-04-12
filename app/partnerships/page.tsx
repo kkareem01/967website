@@ -121,7 +121,7 @@ export default function PartnershipsPage() {
             Bring authentic Yemeni coffee culture to your city, your event, or your&nbsp;workplace.
           </p>
           <a
-            href="mailto:admin@967coffeeco.com"
+            href="#partnership-form"
             className="mt-10 inline-flex items-center justify-center bg-caramel text-espresso font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:bg-gold transition-all"
           >
             Contact Us
@@ -260,8 +260,8 @@ export default function PartnershipsPage() {
         </div>
       </section>
 
-      {/* ── 5. CLOSING CTA ───────────────────────────────────────── */}
-      <section className="relative py-20 md:py-28 px-4 sm:px-6 lg:px-8">
+      {/* ── 5. PARTNERSHIP INQUIRY FORM ────────────────────────── */}
+      <section id="partnership-form" className="relative py-20 md:py-28 px-4 sm:px-6 lg:px-8">
         <div className="absolute inset-0">
           <Image
             src="/images/store/outdoor.jpg"
@@ -273,25 +273,158 @@ export default function PartnershipsPage() {
         </div>
         <div className="absolute inset-0 bg-espresso/80" aria-hidden="true" />
 
-        <div className="relative z-10 max-w-2xl mx-auto text-center">
-          <p className="font-inter text-[10px] md:text-xs tracking-[0.35em] uppercase text-caramel mb-4">
-            Get Started
-          </p>
-          <div className="w-8 h-px bg-caramel mx-auto mb-8" aria-hidden="true" />
-          <h2 className="font-dm-serif text-3xl md:text-5xl text-cream mb-4">
-            Let&rsquo;s Build{' '}
-            <span className="italic text-caramel">Together.</span>
-          </h2>
-          <p className="font-inter text-sm md:text-base text-cream/70 leading-relaxed mb-10 max-w-lg mx-auto">
-            Interested in bringing 967 Coffee Co. to your city, your event, or your
-            workplace? We&rsquo;d love to hear from you.
-          </p>
-          <a
-            href="mailto:admin@967coffeeco.com"
-            className="inline-flex items-center justify-center bg-caramel text-espresso font-inter font-medium px-9 py-3.5 rounded text-sm tracking-wide min-h-[44px] hover:bg-gold transition-all"
+        <div className="relative z-10 max-w-lg mx-auto">
+          <div className="text-center mb-10">
+            <p className="font-inter text-[10px] md:text-xs tracking-[0.35em] uppercase text-caramel mb-4">
+              Get Started
+            </p>
+            <div className="w-8 h-px bg-caramel mx-auto mb-8" aria-hidden="true" />
+            <h2 className="font-dm-serif text-3xl md:text-5xl text-cream mb-4">
+              Let&rsquo;s Build{' '}
+              <span className="italic text-caramel">Together.</span>
+            </h2>
+            <p className="font-inter text-sm md:text-base text-cream/70 leading-relaxed max-w-lg mx-auto">
+              Interested in bringing 967 Coffee Co. to your city, your event, or your
+              workplace? We&rsquo;d love to hear from you.
+            </p>
+          </div>
+
+          <form
+            action="https://formsubmit.co/khatibkareem983@gmail.com"
+            method="POST"
+            className="space-y-5 text-left"
           >
-            Contact Us
-          </a>
+            <input type="hidden" name="_subject" value="New Partnership Inquiry — 967 Coffee Co." />
+            <input type="hidden" name="_next" value="https://www.967coffeeco.com/partnerships" />
+            <input type="hidden" name="_captcha" value="true" />
+
+            {/* First Name + Last Name */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label
+                  htmlFor="partnership-first-name"
+                  className="block font-inter text-sm font-semibold text-cream mb-1.5"
+                >
+                  First Name
+                </label>
+                <input
+                  id="partnership-first-name"
+                  name="first_name"
+                  type="text"
+                  required
+                  aria-label="Your first name"
+                  placeholder="Jane"
+                  className="w-full bg-cream border border-coffee/20 rounded-xl px-4 py-3 text-sm font-inter text-espresso placeholder-coffee/40 focus:outline-none focus:border-caramel transition-colors"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="partnership-last-name"
+                  className="block font-inter text-sm font-semibold text-cream mb-1.5"
+                >
+                  Last Name
+                </label>
+                <input
+                  id="partnership-last-name"
+                  name="last_name"
+                  type="text"
+                  required
+                  aria-label="Your last name"
+                  placeholder="Smith"
+                  className="w-full bg-cream border border-coffee/20 rounded-xl px-4 py-3 text-sm font-inter text-espresso placeholder-coffee/40 focus:outline-none focus:border-caramel transition-colors"
+                />
+              </div>
+            </div>
+
+            {/* Email */}
+            <div>
+              <label
+                htmlFor="partnership-email"
+                className="block font-inter text-sm font-semibold text-cream mb-1.5"
+              >
+                Email
+              </label>
+              <input
+                id="partnership-email"
+                name="email"
+                type="email"
+                required
+                aria-label="Your email address"
+                placeholder="jane@example.com"
+                className="w-full bg-cream border border-coffee/20 rounded-xl px-4 py-3 text-sm font-inter text-espresso placeholder-coffee/40 focus:outline-none focus:border-caramel transition-colors"
+              />
+            </div>
+
+            {/* Phone */}
+            <div>
+              <label
+                htmlFor="partnership-phone"
+                className="block font-inter text-sm font-semibold text-cream mb-1.5"
+              >
+                Phone
+              </label>
+              <input
+                id="partnership-phone"
+                name="phone"
+                type="tel"
+                aria-label="Your phone number"
+                placeholder="(555) 123-4567"
+                className="w-full bg-cream border border-coffee/20 rounded-xl px-4 py-3 text-sm font-inter text-espresso placeholder-coffee/40 focus:outline-none focus:border-caramel transition-colors"
+              />
+            </div>
+
+            {/* Partnership Type */}
+            <div>
+              <label
+                htmlFor="partnership-type"
+                className="block font-inter text-sm font-semibold text-cream mb-1.5"
+              >
+                Partnership Type
+              </label>
+              <select
+                id="partnership-type"
+                name="partnership_type"
+                required
+                aria-label="Select partnership type"
+                defaultValue=""
+                className="w-full bg-cream border border-coffee/20 rounded-xl px-4 py-3 text-sm font-inter text-espresso focus:outline-none focus:border-caramel transition-colors"
+              >
+                <option value="" disabled>Select a partnership type</option>
+                <option value="Franchise">Franchise</option>
+                <option value="Event Catering">Event Catering</option>
+                <option value="Corporate">Corporate</option>
+              </select>
+            </div>
+
+            {/* Message */}
+            <div>
+              <label
+                htmlFor="partnership-message"
+                className="block font-inter text-sm font-semibold text-cream mb-1.5"
+              >
+                Message
+              </label>
+              <textarea
+                id="partnership-message"
+                name="message"
+                rows={5}
+                required
+                aria-label="Your message"
+                placeholder="Tell us about your interest in partnering with 967 Coffee Co."
+                className="w-full bg-cream border border-coffee/20 rounded-xl px-4 py-3 text-sm font-inter text-espresso placeholder-coffee/40 focus:outline-none focus:border-caramel transition-colors resize-y"
+              />
+            </div>
+
+            {/* Submit */}
+            <div className="pt-2 text-center">
+              <button
+                type="submit"
+                className="w-full sm:w-auto inline-flex items-center justify-center bg-caramel text-espresso font-inter font-semibold px-10 py-3.5 rounded-full min-h-[44px] hover:bg-gold hover:scale-105 transition-all"
+              >
+                Send Inquiry
+              </button>
+            </div>
+          </form>
         </div>
       </section>
 

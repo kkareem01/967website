@@ -157,30 +157,6 @@ export default function CareersPage() {
               />
             </div>
 
-            {/* Position */}
-            <div>
-              <label
-                htmlFor="career-position"
-                className="block font-inter text-sm font-semibold text-espresso mb-1.5"
-              >
-                Position
-              </label>
-              <select
-                id="career-position"
-                name="position"
-                required
-                aria-label="Position you are applying for"
-                className="w-full bg-cream border border-coffee/20 rounded-xl px-4 py-3 text-sm font-inter text-espresso focus:outline-none focus:border-caramel transition-colors"
-              >
-                <option value="">Select a position...</option>
-                <option value="barista">Barista</option>
-                <option value="shift-lead">Shift Lead</option>
-                <option value="kitchen">Kitchen</option>
-                <option value="front-of-house">Front of House</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-
             {/* Resume */}
             <div>
               <label
