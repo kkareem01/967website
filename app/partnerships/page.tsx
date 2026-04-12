@@ -290,7 +290,7 @@ export default function PartnershipsPage() {
           </div>
 
           <form
-            action="https://formsubmit.co/khatibkareem983@gmail.com"
+            action="https://formsubmit.co/admin@967coffeeco.com"
             method="POST"
             className="space-y-5 text-left"
           >

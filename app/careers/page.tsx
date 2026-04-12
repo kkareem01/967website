@@ -74,7 +74,7 @@ export default function CareersPage() {
           </h2>
 
           <form
-            action="https://formsubmit.co/khatibkareem983@gmail.com"
+            action="https://formsubmit.co/admin@967coffeeco.com"
             method="POST"
             encType="multipart/form-data"
             className="space-y-5 text-left"
