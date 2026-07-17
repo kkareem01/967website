@@ -42,7 +42,7 @@ export const MENU_CATEGORIES: readonly MenuCategory[] = [
       },
       {
         name: 'Adeni Chai',
-        description: 'Premium Black Tea with Cardamom, Cinnamon, Nutmeg and Cream',
+        description: 'Traditional Yemeni Milk Tea with Cardamom, Cinnamon & Nutmeg',
         image: '/images/menu/adeni-chai.jpg',
         imagePosition: 'center 55%',
       },
