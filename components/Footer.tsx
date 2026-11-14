@@ -141,7 +141,7 @@ export default function Footer() {
               ))}
             </ul>
             <a
-              href="https://www.clover.com/online-ordering/967-coffee-co-roswell"
+              href="https://cash.app/$967coffeeco"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center mt-5 bg-caramel text-espresso text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-gold transition-colors min-h-[44px]"

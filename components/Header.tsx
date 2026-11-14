@@ -58,7 +58,7 @@ export default function Header() {
 
           {/* Order Online — minimal text link */}
           <a
-            href="https://www.clover.com/online-ordering/967-coffee-co-roswell"
+            href="https://cash.app/$967coffeeco"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center text-espresso/60 hover:text-espresso text-xs font-inter font-medium tracking-widest uppercase transition-colors min-h-[44px]"
@@ -133,7 +133,7 @@ export default function Header() {
         {/* Order Online CTA */}
         <div className="px-6 pb-10">
           <a
-            href="https://www.clover.com/online-ordering/967-coffee-co-roswell"
+            href="https://cash.app/$967coffeeco"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-center bg-caramel text-espresso font-inter font-semibold text-sm tracking-widest uppercase px-6 py-4 rounded min-h-[44px] hover:bg-gold transition-colors"

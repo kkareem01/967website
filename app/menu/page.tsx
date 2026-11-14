@@ -51,7 +51,7 @@ export default function MenuPage() {
         <p className="font-inter text-espresso text-sm font-medium">
           Order for pickup —{' '}
           <a
-            href="https://www.clover.com/online-ordering/967-coffee-co-roswell"
+            href="https://cash.app/$967coffeeco"
             target="_blank"
             rel="noopener noreferrer"
             className="font-bold underline underline-offset-2 hover:text-coffee transition-colors"
@@ -97,7 +97,7 @@ export default function MenuPage() {
               Order online for pickup through our Clover portal.
             </p>
             <a
-              href="https://www.clover.com/online-ordering/967-coffee-co-roswell"
+              href="https://cash.app/$967coffeeco"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center bg-caramel text-espresso font-inter font-semibold px-8 py-3 rounded-full min-h-[44px] hover:bg-gold hover:scale-105 transition-all"
